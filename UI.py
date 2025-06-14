@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-BACKEND_URL = "https://your-deployed-fastapi-url.com"  # Replace with actual URL
+BACKEND_URL = "https://calculator-ass1-api.onrender.com"  
 
 st.title("Smart Calculator")
 
