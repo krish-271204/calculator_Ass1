@@ -21,7 +21,7 @@ if operation in ["Square Root", "Logarithm"]:
             st.error(f"Error: {e}")
 
 elif operation == "Evaluate Expression":
-    expr = st.text_input("Enter expression (e.g., (2+3)*sqrt(16))")
+    expr = st.text_input("Enter expression")
     if st.button("Evaluate"):
         try:
             response = requests.post(f"{BACKEND_URL}/evaluate", json={"expression": expr})
